@@ -136,14 +136,15 @@
                 });
             </script>
         </nav>
-        <div class="max-w-3xl mx-auto pt-4" style="max-width: 740px">
+        <div class="max-w-3xl mx-auto pt-4 page" style="max-width: 740px">
             <style>
                 /* Slideshow container */
                 .slideshow-container {
                     max-width: 1000px;
                     position: relative;
-                    margin: auto;
+                    margin: 0 auto;
                     height: 350px;
+                    flex-shrink: 0;
                     overflow: hidden;
                 }
 
@@ -309,23 +310,26 @@
                 </div>
             </div>
 
-            <footer class="bg-neutral-900 p-4 text-white mt-4">
+            <footer class="site-footer">
                 &copy; Michael Richelle
             </footer>
         </div>
 
         <script>
             var slideIndex = 1;
+            var slideTimer;
             showSlides(slideIndex);
 
             // Next/previous controls
             function plusSlides(n) {
                 showSlides((slideIndex += n));
+                resetSlideTimer();
             }
 
             // Thumbnail image controls
             function currentSlide(n) {
                 showSlides((slideIndex = n));
+                resetSlideTimer();
             }
 
             function showSlides(n) {
@@ -343,9 +347,15 @@
                 slides[slideIndex - 1].style.display = "block";
             }
 
-            setInterval(function () {
-                plusSlides(1);
-            }, 5500);
+            // Restart the countdown so a manual click always gets a full interval
+            function resetSlideTimer() {
+                clearInterval(slideTimer);
+                slideTimer = setInterval(function () {
+                    showSlides((slideIndex += 1));
+                }, 5500);
+            }
+
+            resetSlideTimer();
         </script>
     </body>
 </html>
