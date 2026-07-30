@@ -1,327 +1,346 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/index.css" rel="stylesheet" />
-    <title>Home - Michael Richelle</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/site.webmanifest" />
-  </head>
-  <body>
-    <nav class="bg-header bg-center py-2 px-2 sm:py-10 sm:px-8">
-      <div class="max-w-3xl mx-auto">
-        <div class="flex items-center">
-          <button
-            class="sm:hidden mobile-menu-button p-3 flex justify-center items-center mr-3 text-gray-300 hover:text-emerald-400"
-          >
-            <svg
-              class="w-8 h-8"
-              x-show="!showMenu"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./dist/index.css" rel="stylesheet" />
+        <title>Home - Michael Richelle</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/site.webmanifest" />
+    </head>
+    <body>
+        <nav class="bg-header bg-center py-2 px-2 sm:py-10 sm:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="flex items-center">
+                    <button
+                        class="sm:hidden mobile-menu-button p-3 flex justify-center items-center mr-3 text-gray-300 hover:text-emerald-400"
+                    >
+                        <svg
+                            class="w-8 h-8"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <a
+                        href="."
+                        class="text-emerald-400 font-semibold text-2xl grow"
+                        >Michael Richelle</a
+                    >
+                    <div class="hidden sm:flex space-x-3">
+                        <a
+                            href="https://www.facebook.com/michael.richelle"
+                            target="_blank"
+                            title="Facebook"
+                            ><img src="./assets/facebook.png" class="w-7"
+                        /></a>
+                        <a
+                            href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
+                            target="_blank"
+                            title="Spotify"
+                            ><img src="./assets/spotify.png" class="w-7"
+                        /></a>
+                        <a
+                            href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
+                            target="_blank"
+                            title="Youtube"
+                            ><img src="./assets/youtube.png" class="w-7"
+                        /></a>
+                    </div>
+                </div>
+                <div class="hidden sm:flex space-x-4 mt-3">
+                    <a href="." title="Home" class="nav-item current">Home</a>
+                    <a href="./services" title="Services" class="nav-item"
+                        >Services</a
+                    >
+                    <a href="./about" title="About" class="nav-item">About</a>
+                    <a
+                        href="./work-history"
+                        title="Work History"
+                        class="nav-item"
+                        >Work History</a
+                    >
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden sm:hidden mobile-menu px-4 pt-2 pb-4">
+                <div
+                    class="flex flex-col divide-y divide-emerald-400 divide-y-2"
+                >
+                    <a href="." title="Home" class="nav-item-mobile current"
+                        >Home</a
+                    >
+                    <a
+                        href="./services"
+                        title="Services"
+                        class="nav-item-mobile"
+                        >Services</a
+                    >
+                    <a href="./about" title="About" class="nav-item-mobile"
+                        >About</a
+                    >
+                    <a
+                        href="./work-history"
+                        title="Work History"
+                        class="nav-item-mobile"
+                        >Work History</a
+                    >
+                </div>
+                <div class="flex space-x-3 mt-3">
+                    <a
+                        href="https://www.facebook.com/michael.richelle"
+                        target="_blank"
+                        title="Facebook"
+                        ><img src="./assets/facebook.png" class="w-7"
+                    /></a>
+                    <a
+                        href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
+                        target="_blank"
+                        title="Spotify"
+                        ><img src="./assets/spotify.png" class="w-7"
+                    /></a>
+                    <a
+                        href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
+                        target="_blank"
+                        title="Youtube"
+                        ><img src="./assets/youtube.png" class="w-7"
+                    /></a>
+                </div>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+        <div class="max-w-3xl mx-auto pt-4" style="max-width: 740px">
+            <style>
+                /* Slideshow container */
+                .slideshow-container {
+                    max-width: 1000px;
+                    position: relative;
+                    margin: auto;
+                    height: 350px;
+                    overflow: hidden;
+                }
+
+                /* Hide the images by default */
+                .mySlides {
+                    display: none;
+                }
+
+                /* Next & previous buttons */
+                .prev,
+                .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    margin-top: -22px;
+                    padding: 16px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+
+                /* Position the "next button" to the right */
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover,
+                .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+
+                /* Fading animation */
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 3s;
+                    animation-name: fade;
+                    animation-duration: 3s;
+                }
+
+                @-webkit-keyframes fade {
+                    from {
+                        opacity: 0.4;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes fade {
+                    from {
+                        opacity: 0.4;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+            </style>
+
+            <div class="hidden sm:block slideshow-container">
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image1.jpg"
+                        class="slide-image"
+                        style="margin-top: -100px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image10.jpg"
+                        class="slide-image"
+                        style="margin-top: -100px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image7.jpeg"
+                        class="slide-image"
+                        style="margin-top: -100px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image8.png"
+                        class="slide-image"
+                        style="margin-top: -100px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/carousel/image2.png" class="slide-image" />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image3.png"
+                        class="slide-image"
+                        style="margin-top: -120px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image4.png"
+                        class="slide-image"
+                        style="margin-top: -150px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image5.png"
+                        class="slide-image"
+                        style="margin-top: -150px"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image6.png"
+                        class="slide-image"
+                        style="max-width: 110%"
+                    />
+                </div>
+                <div class="mySlides fade">
+                    <img
+                        src="assets/carousel/image9.jpg"
+                        class="slide-image"
+                        style="margin-top: -100px"
+                    />
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="sm:hidden max-h-60 overflow-hidden">
+                <img src="assets/carousel/image1.jpg" />
+            </div>
+
+            <div
+                class="bg-black text-white text-center py-2 pt-4 uppercase text-4xl sm:text-7xl"
+                style="font-family: &quot;BebasNeue&quot;"
             >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-          <a href="." class="text-emerald-400 font-semibold text-2xl grow"
-            >Michael Richelle</a
-          >
-          <div class="hidden sm:flex space-x-3">
-            <a
-              href="https://www.facebook.com/michael.richelle"
-              target="_blank"
-              title="Facebook"
-              ><img src="./assets/facebook.png" class="w-7"
-            /></a>
-            <a
-              href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
-              target="_blank"
-              title="Spotify"
-              ><img src="./assets/spotify.png" class="w-7"
-            /></a>
-            <a
-              href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
-              target="_blank"
-              title="Youtube"
-              ><img src="./assets/youtube.png" class="w-7"
-            /></a>
-          </div>
-        </div>
-        <div class="hidden sm:flex space-x-4 mt-3">
-          <a href="." title="Home" class="nav-item current">Home</a>
-          <a href="./services" title="Services" class="nav-item">Services</a>
-          <a href="./about" title="About" class="nav-item">About</a>
-          <a href="./work-history" title="Work History" class="nav-item"
-            >Work History</a
-          >
-        </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="hidden sm:hidden mobile-menu px-4 pt-2 pb-4">
-        <div class="flex flex-col divide-y divide-emerald-400 divide-y-2">
-          <a href="." title="Home" class="nav-item-mobile current">Home</a>
-          <a href="./services" title="Services" class="nav-item-mobile"
-            >Services</a
-          >
-          <a href="./about" title="About" class="nav-item-mobile">About</a>
-          <a href="./work-history" title="Work History" class="nav-item-mobile"
-            >Work History</a
-          >
-        </div>
-        <div class="flex space-x-3 mt-3">
-          <a
-            href="https://www.facebook.com/michael.richelle"
-            target="_blank"
-            title="Facebook"
-            ><img src="./assets/facebook.png" class="w-7"
-          /></a>
-          <a
-            href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
-            target="_blank"
-            title="Spotify"
-            ><img src="./assets/spotify.png" class="w-7"
-          /></a>
-          <a
-            href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
-            target="_blank"
-            title="Youtube"
-            ><img src="./assets/youtube.png" class="w-7"
-          /></a>
-        </div>
-      </div>
-      <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+                Record&nbsp;&nbsp;&nbsp;<span class="text-emerald-400">Mix</span
+                >&nbsp;&nbsp;&nbsp;Master
+            </div>
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      </script>
-    </nav>
-    <div class="max-w-3xl mx-auto pt-4" style="max-width: 740px">
-      <style>
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-          height: 350px;
-          overflow: hidden;
-        }
+            <div class="bg-neutral-800 px-12 sm:px-24 py-12 text-white">
+                Welcome to Richelle Music. Home to audio engineer and musician
+                Michael Richelle. Please take a look and feel free to reach out.
+                <div class="mt-3 text-gray-400">
+                    mrichellemusic@gmail.com<br />
+                    215.207.4052
+                </div>
+            </div>
 
-        /* Hide the images by default */
-        .mySlides {
-          display: none;
-        }
-
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          margin-top: -22px;
-          padding: 16px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 3s;
-          animation-name: fade;
-          animation-duration: 3s;
-        }
-
-        @-webkit-keyframes fade {
-          from {
-            opacity: 0.4;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-
-        @keyframes fade {
-          from {
-            opacity: 0.4;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-      </style>
-
-      <div class="hidden sm:block slideshow-container">
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image1.jpg"
-            class="slide-image"
-            style="margin-top: -100px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image10.jpg"
-            class="slide-image"
-            style="margin-top: -100px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image7.jpeg"
-            class="slide-image"
-            style="margin-top: -100px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image8.png"
-            class="slide-image"
-            style="margin-top: -100px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img src="assets/carousel/image2.png" class="slide-image" />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image3.png"
-            class="slide-image"
-            style="margin-top: -120px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image4.png"
-            class="slide-image"
-            style="margin-top: -150px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image5.png"
-            class="slide-image"
-            style="margin-top: -150px"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image6.png"
-            class="slide-image"
-            style="max-width: 110%"
-          />
-        </div>
-        <div class="mySlides fade">
-          <img
-            src="assets/carousel/image9.jpg"
-            class="slide-image"
-            style="margin-top: -100px"
-          />
+            <footer class="bg-black p-4 text-white mt-4">
+                &copy; Michael Richelle
+            </footer>
         </div>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-      <div class="sm:hidden max-h-60 overflow-hidden">
-        <img src="assets/carousel/image1.jpg" />
-      </div>
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides((slideIndex += n));
+            }
 
-      <div
-        class="bg-black text-white text-center py-2 pt-4 uppercase text-4xl sm:text-7xl"
-        style="font-family: &quot;BebasNeue&quot;"
-      >
-        Studio&nbsp;&nbsp;&nbsp;<span class="text-emerald-400">Location</span
-        >&nbsp;&nbsp;&nbsp;Live
-      </div>
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides((slideIndex = n));
+            }
 
-      <div class="bg-neutral-800 px-12 sm:px-24 py-12 text-white">
-        Welcome to Richelle Music. Home to audio engineer and musician Michael
-        Richelle. Please take a look and feel free to reach out.
-        <div class="mt-3 text-gray-400">
-          mrichellemusic@gmail.com<br />
-          215.207.4052
-        </div>
-      </div>
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
 
-      <footer class="bg-black p-4 text-white mt-4">
-        &copy; Michael Richelle
-      </footer>
-    </div>
-
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-      }
-
-      setInterval(function () {
-        plusSlides(1);
-      }, 5500);
-    </script>
-  </body>
+            setInterval(function () {
+                plusSlides(1);
+            }, 5500);
+        </script>
+    </body>
 </html>
