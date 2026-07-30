@@ -1,164 +1,183 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../dist/index.css" rel="stylesheet" />
-    <title>About - Michael Richelle</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../assets/site.webmanifest" />
-  </head>
-  <body>
-    <nav class="bg-header bg-center py-2 px-2 sm:py-10 sm:px-8">
-      <div class="max-w-3xl mx-auto">
-        <div class="flex items-center">
-          <button
-            class="sm:hidden mobile-menu-button p-3 flex justify-center items-center mr-3 text-gray-300 hover:text-emerald-400"
-          >
-            <svg
-              class="w-8 h-8"
-              x-show="!showMenu"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-          <a href=".." class="text-emerald-400 font-semibold text-2xl grow"
-            >Michael Richelle</a
-          >
-          <div class="hidden sm:flex space-x-3">
-            <a
-              href="https://www.facebook.com/michael.richelle"
-              target="_blank"
-              title="Facebook"
-              ><img src="../assets/facebook.png" class="w-7"
-            /></a>
-            <a
-              href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
-              target="_blank"
-              title="Spotify"
-              ><img src="../assets/spotify.png" class="w-7"
-            /></a>
-            <a
-              href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
-              target="_blank"
-              title="Youtube"
-              ><img src="../assets/youtube.png" class="w-7"
-            /></a>
-          </div>
-        </div>
-        <div class="hidden sm:flex space-x-4 mt-3">
-          <a href=".." title="Home" class="nav-item">Home</a>
-          <a href="../services" title="Services" class="nav-item">Services</a>
-          <a href="../about" title="About" class="nav-item current">About</a>
-          <a href="../work-history" title="Work History" class="nav-item"
-            >Work History</a
-          >
-        </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="hidden sm:hidden mobile-menu px-4 pt-2 pb-4">
-        <div class="flex flex-col divide-y divide-emerald-400 divide-y-2">
-          <a href=".." title="Home" class="nav-item-mobile">Home</a>
-          <a href="../services" title="Services" class="nav-item-mobile"
-            >Services</a
-          >
-          <a href="../about" title="About" class="nav-item-mobile current"
-            >About</a
-          >
-          <a href="../work-history" title="Work History" class="nav-item-mobile"
-            >Work History</a
-          >
-        </div>
-        <div class="flex space-x-3 mt-3">
-          <a
-            href="https://www.facebook.com/michael.richelle"
-            target="_blank"
-            title="Facebook"
-            ><img src="../assets/facebook.png" class="w-7"
-          /></a>
-          <a
-            href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
-            target="_blank"
-            title="Spotify"
-            ><img src="../assets/spotify.png" class="w-7"
-          /></a>
-          <a
-            href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
-            target="_blank"
-            title="Youtube"
-            ><img src="../assets/youtube.png" class="w-7"
-          /></a>
-        </div>
-      </div>
-      <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../dist/index.css" rel="stylesheet" />
+        <title>About - Michael Richelle</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../assets/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../assets/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../assets/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../assets/site.webmanifest" />
+    </head>
+    <body>
+        <nav class="bg-header bg-center py-2 px-2 sm:py-10 sm:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="flex items-center">
+                    <button
+                        class="sm:hidden mobile-menu-button p-3 flex justify-center items-center mr-3 text-gray-300 hover:text-emerald-400"
+                    >
+                        <svg
+                            class="w-8 h-8"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <a
+                        href=".."
+                        class="text-emerald-400 font-semibold text-2xl grow"
+                        >Michael Richelle</a
+                    >
+                    <div class="hidden sm:flex space-x-3">
+                        <a
+                            href="https://www.facebook.com/michael.richelle"
+                            target="_blank"
+                            title="Facebook"
+                            ><img src="../assets/facebook.png" class="w-7"
+                        /></a>
+                        <a
+                            href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
+                            target="_blank"
+                            title="Spotify"
+                            ><img src="../assets/spotify.png" class="w-7"
+                        /></a>
+                        <a
+                            href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
+                            target="_blank"
+                            title="Youtube"
+                            ><img src="../assets/youtube.png" class="w-7"
+                        /></a>
+                    </div>
+                </div>
+                <div class="hidden sm:flex space-x-4 mt-3">
+                    <a href=".." title="Home" class="nav-item">Home</a>
+                    <a href="../services" title="Services" class="nav-item"
+                        >Services</a
+                    >
+                    <a href="../about" title="About" class="nav-item current"
+                        >About</a
+                    >
+                    <a
+                        href="../work-history"
+                        title="Work History"
+                        class="nav-item"
+                        >Work History</a
+                    >
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden sm:hidden mobile-menu px-4 pt-2 pb-4">
+                <div class="flex flex-col divide-emerald-400 divide-y-2">
+                    <a href=".." title="Home" class="nav-item-mobile">Home</a>
+                    <a
+                        href="../services"
+                        title="Services"
+                        class="nav-item-mobile"
+                        >Services</a
+                    >
+                    <a
+                        href="../about"
+                        title="About"
+                        class="nav-item-mobile current"
+                        >About</a
+                    >
+                    <a
+                        href="../work-history"
+                        title="Work History"
+                        class="nav-item-mobile"
+                        >Work History</a
+                    >
+                </div>
+                <div class="flex space-x-3 mt-3">
+                    <a
+                        href="https://www.facebook.com/michael.richelle"
+                        target="_blank"
+                        title="Facebook"
+                        ><img src="../assets/facebook.png" class="w-7"
+                    /></a>
+                    <a
+                        href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
+                        target="_blank"
+                        title="Spotify"
+                        ><img src="../assets/spotify.png" class="w-7"
+                    /></a>
+                    <a
+                        href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
+                        target="_blank"
+                        title="Youtube"
+                        ><img src="../assets/youtube.png" class="w-7"
+                    /></a>
+                </div>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
 
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      </script>
-    </nav>
-    <div class="max-w-4xl mx-auto pt-4">
-      <div class="sm:flex bg-black text-sm text-white sm:p-4">
-        <div class="flex items-center">
-          <img src="../assets/headshot.png" />
-        </div>
-        <div class="px-6 py-6 flex flex-col justify-center">
-          <h1 class="uppercase text-emerald-400 text-lg font-bold">
-            Michael Richelle
-          </h1>
-          <p>
-            Michael's passion for music and sound is evident to those who have
-            worked with him. Whether at the studio, venue or soundstage,
-            providing a comfortable space to create and perform is the first
-            priority. From that starting point the technical aspects of
-            capturing the music takes place.
-          </p>
-          <br />
-          <p>
-            Michael is on staff at Rittenhouse Soundworks and INDRE Recording
-            and Productions. Formerly on staff at World Cafe Live and Live
-            Nation.
-          </p>
-          <br />
-          <p>
-            With over 25 years of studio recording, location recording, music
-            mixing for broadcast and live sound, Michael's work history and
-            experiences are broad.
-          </p>
-          <div class="mt-3 text-gray-400">
-            mrichellemusic@gmail.com<br />
-            215.207.4052
-          </div>
-        </div>
-      </div>
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+        <div class="max-w-4xl mx-auto pt-4">
+            <div class="sm:flex bg-black text-sm text-white sm:p-4">
+                <div class="flex items-center">
+                    <img src="../assets/headshot.png" />
+                </div>
+                <div class="px-6 py-6 flex flex-col justify-center">
+                    <h1 class="uppercase text-emerald-400 text-lg font-bold">
+                        Michael Richelle
+                    </h1>
+                    <p>
+                        Michael's passion for music and sound is evident to
+                        those who have worked with him. Whether at the studio,
+                        venue or soundstage, providing a comfortable space to
+                        create and perform is the first priority. From that
+                        starting point the technical aspects of capturing the
+                        music takes place.
+                    </p>
+                    <br />
+                    <p>
+                        Michael is on staff at Rittenhouse Soundworks and INDRE
+                        Recording and Productions. Formerly on staff at World
+                        Cafe Live and Live Nation.
+                    </p>
+                    <br />
+                    <p>
+                        With over 25 years of studio recording, location
+                        recording, music mixing for broadcast and live sound,
+                        Michael's work history and experiences are broad.
+                    </p>
+                    <div class="mt-3 text-gray-400">
+                        mrichellemusic@gmail.com<br />
+                        215.207.4052
+                    </div>
+                </div>
+            </div>
 
-      <footer class="bg-black p-4 text-white mt-4">
-        &copy; Michael Richelle
-      </footer>
-    </div>
-  </body>
+            <footer class="bg-black p-4 text-white mt-4">
+                &copy; Michael Richelle
+            </footer>
+        </div>
+    </body>
 </html>

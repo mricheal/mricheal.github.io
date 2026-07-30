@@ -1,736 +1,786 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../dist/index.css" rel="stylesheet" />
-    <title>Work History - Michael Richelle</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../assets/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../assets/site.webmanifest" />
-  </head>
-  <body>
-    <nav class="bg-header bg-center py-2 px-2 sm:py-10 sm:px-8">
-      <div class="max-w-3xl mx-auto">
-        <div class="flex items-center">
-          <button
-            class="sm:hidden mobile-menu-button p-3 flex justify-center items-center mr-3 text-gray-300 hover:text-emerald-400"
-          >
-            <svg
-              class="w-8 h-8"
-              x-show="!showMenu"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-          <a href=".." class="text-emerald-400 font-semibold text-2xl grow"
-            >Michael Richelle</a
-          >
-          <div class="hidden sm:flex space-x-3">
-            <a
-              href="https://www.facebook.com/michael.richelle"
-              target="_blank"
-              title="Facebook"
-              ><img src="../assets/facebook.png" class="w-7"
-            /></a>
-            <a
-              href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
-              target="_blank"
-              title="Spotify"
-              ><img src="../assets/spotify.png" class="w-7"
-            /></a>
-            <a
-              href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
-              target="_blank"
-              title="Youtube"
-              ><img src="../assets/youtube.png" class="w-7"
-            /></a>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../dist/index.css" rel="stylesheet" />
+        <title>Work History - Michael Richelle</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../assets/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../assets/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../assets/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../assets/site.webmanifest" />
+    </head>
+    <body>
+        <nav class="bg-header bg-center py-2 px-2 sm:py-10 sm:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="flex items-center">
+                    <button
+                        class="sm:hidden mobile-menu-button p-3 flex justify-center items-center mr-3 text-gray-300 hover:text-emerald-400"
+                    >
+                        <svg
+                            class="w-8 h-8"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <a
+                        href=".."
+                        class="text-emerald-400 font-semibold text-2xl grow"
+                        >Michael Richelle</a
+                    >
+                    <div class="hidden sm:flex space-x-3">
+                        <a
+                            href="https://www.facebook.com/michael.richelle"
+                            target="_blank"
+                            title="Facebook"
+                            ><img src="../assets/facebook.png" class="w-7"
+                        /></a>
+                        <a
+                            href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
+                            target="_blank"
+                            title="Spotify"
+                            ><img src="../assets/spotify.png" class="w-7"
+                        /></a>
+                        <a
+                            href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
+                            target="_blank"
+                            title="Youtube"
+                            ><img src="../assets/youtube.png" class="w-7"
+                        /></a>
+                    </div>
+                </div>
+                <div class="hidden sm:flex space-x-4 mt-3">
+                    <a href=".." title="Home" class="nav-item">Home</a>
+                    <a href="../services" title="Services" class="nav-item"
+                        >Services</a
+                    >
+                    <a href="../about" title="About" class="nav-item">About</a>
+                    <a
+                        href="../work-history"
+                        title="Work History"
+                        class="nav-item current"
+                        >Work History</a
+                    >
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden sm:hidden mobile-menu px-4 pt-2 pb-4">
+                <div class="flex flex-col divide-emerald-400 divide-y-2">
+                    <a href=".." title="Home" class="nav-item-mobile">Home</a>
+                    <a
+                        href="../services"
+                        title="Services"
+                        class="nav-item-mobile"
+                        >Services</a
+                    >
+                    <a href="../about" title="About" class="nav-item-mobile"
+                        >About</a
+                    >
+                    <a
+                        href="../work-history"
+                        title="Work History"
+                        class="nav-item-mobile current"
+                        >Work History</a
+                    >
+                </div>
+                <div class="flex space-x-3 mt-3">
+                    <a
+                        href="https://www.facebook.com/michael.richelle"
+                        target="_blank"
+                        title="Facebook"
+                        ><img src="../assets/facebook.png" class="w-7"
+                    /></a>
+                    <a
+                        href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
+                        target="_blank"
+                        title="Spotify"
+                        ><img src="../assets/spotify.png" class="w-7"
+                    /></a>
+                    <a
+                        href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
+                        target="_blank"
+                        title="Youtube"
+                        ><img src="../assets/youtube.png" class="w-7"
+                    /></a>
+                </div>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+        <div class="max-w-4xl mx-auto pt-4 space-y-4">
+            <div class="bg-black text-white p-4">
+                <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
+                    Recent work
+                </h1>
+                <ul class="list-disc pl-6">
+                    <li>
+                        Amos Lee "My Ideal" (Dualtone) [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Sun Ra Arkestra "Living Sky" (Omni Sound) [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Roots Picnic "Mann Stage" (YouTube) [Broadcast Music
+                        Mixer]
+                    </li>
+                    <li>
+                        Samara Joy "O Holy Night" (Verve) [Assistant Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Snacktime "Sounds From The Street" [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Philadelphia Orchestra "Our City Your Orchestra" (Small
+                        Ensemble Video) [Studio Recording Engineer]
+                    </li>
+                    <li>
+                        Athena Film Festival (Barnard College) [Audio
+                        Technician]
+                    </li>
+                    <li>
+                        Rising Song Institute RAZA "Kapelya" [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Hiruy Tirfe (Upcoming Release) [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Sun Ra Arkestra "Studio Album Swirling" (Strut Records)
+                        [Studio Mix Engineer] (Grammy Nominated)
+                    </li>
+                    <li>
+                        Vince Mendoza & Temple Studio Orchestra "Constant
+                        Renaissance" with Dick Oatts & Terrell Stafford [Remote
+                        Recording Engineer] (Grammy Nominated project)
+                    </li>
+                    <li>
+                        Orrin Evans & The Captain Black Big Band "Presence"
+                        (Smoke Sessions) [Assistant Remote Recording Engineer]
+                        (Grammy Nominated project)
+                    </li>
+                    <li>
+                        Jazzmine Sullivan "Essence Festival Concert" [Remote
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Christmass In Rockefeller Center "Harry Conick, Brad
+                        Paisley, Rob Thomas" (NBC) [Assistant Remote Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Oliver Tree "Grub Hub Sound Bite Video Concert " [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Chad LB Quartet "In Studio Concert " [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Curtis Insitute of Music "Mercy an Opera/Film" [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Club Patio Festival 2020 "Orrin Evans, Buster Williams,
+                        Jeff Watts, Chris Potter" [FOH, Monitors, Livestream
+                        Mix]
+                    </li>
+                    <li>
+                        Celine Dion "National NBC Pre Tape TV Special" [Remote
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Anderson East "Girlfriend Live" ( Atlantic Records)
+                        [Remote Recording Engineer]
+                    </li>
+                    <li>
+                        Chris Oatts Featuring Terrell Stafford "Personalities"
+                        (Bcm&d Records) [Studio Recording/Mix Engineer]
+                    </li>
+                    <li>
+                        Irreversible Entanglements "Open The Gates" (Studio
+                        Album) [Studio Recording Engineer]
+                    </li>
+                    <li>
+                        Dan Hanrahan (Upcoming Release) [Studio Recording/Mix
+                        Engineer]
+                    </li>
+                    <li>
+                        Najwa Parkins (Upcoming Release) [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        The Revivalist (WMMR Live Recording from Ardmore Music
+                        Hall) [Remote Recording Engineer]
+                    </li>
+                    <li>
+                        Ensemble Novo (Studio Album Projects) [Studio Mixing
+                        Engineer]
+                    </li>
+                    <li>
+                        Hot 97 Summer Jam Concert "Met Life Stadium" (Tidal)
+                        [Remote Recording Engineer]
+                    </li>
+                    <li>
+                        Pathos Trio (Four/Ten Media) [Studio Recording Engineer]
+                    </li>
+                    <li>
+                        Japaneese Breakfast "NPR Live Broadcast" [Assistant
+                        Remote Recording Engineer]
+                    </li>
+                    <li>
+                        Black Pearl Chamber Orchestra "Studio Recording" [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Pascal Le Boeuf With The Acropolis Reed Quintet. [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Tyler Mitchell featuring Marshall Allen "Dancing
+                        Shadows" [Studio Recording Engineer]
+                    </li>
+                    <li>
+                        Micah Graves "Not For The Ordinary " (Studio Album)
+                        [Studio Recording Engineer]
+                    </li>
+                    <li>
+                        Ars Nova Miles Davis Tribute Concert (World Cafe Live)
+                        [FOH Engineer]
+                    </li>
+                    <li>
+                        Holly Bowling Concert (World cafe Live) [FOH Engineer]
+                    </li>
+                    <li>
+                        Grace Potter (WXPN Live at The World Cafe) [Monitor
+                        Engineer]
+                    </li>
+                    <li>
+                        The Smithereens (World Cafe Live) [Monitor Engineer]
+                    </li>
+                    <li>
+                        Xponential Festival (WXPN) [Assistant Remote Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Made In America Festival On The Parkway (Tidal)
+                        [Assitasnt Remote Recording Engineer]
+                    </li>
+                    <li>
+                        Dreamville Festival (Tidal) [Remote Recording Engineer]
+                    </li>
+                    <li>
+                        V. Shayne Frederick "The King Suite" [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Gemma Sherry (Studio Album Project) [Studio Recording
+                        Engineer]
+                    </li>
+                    <li>
+                        Raji Malik (A Well Of Hope Album) [Studio
+                        Recording/Mixing/Mastering Engineer]
+                    </li>
+                    <li>
+                        Children Of Adam (Upcoming Release) [Studio
+                        Recording/Mixing/Mastering Engineer]
+                    </li>
+                    <li>
+                        Greg Duncan (Upcoming Release) [Studio Recording/Mixring
+                        Engineer]
+                    </li>
+                    <li>
+                        John Blum With Marshall Allen (Upcoming Release) [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Wayne Smith (Upcoming Release) [Studio
+                        Recording/Mixing/Mastering Engineer]
+                    </li>
+                    <li>
+                        Connor O'neill "The Same Changes Vol. 1" [Studio
+                        Recording Engineer]
+                    </li>
+                    <li>
+                        Opera Philadelphia Womens Choir (Studio Recording)
+                        [Studio Recording Engineer]
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-black text-white p-4">
+                <h1 class="text-lg text-emerald-400 uppercase font-bold">
+                    Partial A-Z
+                </h1>
+                <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
+                    Live Studio Recordings - Concert Recordings - Broadcast
+                    Music Mixing
+                </h1>
+                <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
+                    <li>311</li>
+                    <li>Air</li>
+                    <li>Alter Bridge</li>
+                    <li>Amos Lee</li>
+                    <li>Anderson East</li>
+                    <li>Bacon Brothers</li>
+                    <li>Ben Harper</li>
+                    <li>Beth Orton</li>
+                    <li>Billy Joel</li>
+                    <li>Bow Wow</li>
+                    <li>Breaking Benjamin</li>
+                    <li>Brooklyn Hip Hop Fest</li>
+                    <li>Busta Rhymes</li>
+                    <li>Citizen Cope</li>
+                    <li>Coheed & Cambria</li>
+                    <li>Connor Barwin MTWB</li>
+                    <li>Corinne Bailey Rea</li>
+                    <li>Daniel Lanois</li>
+                    <li>Dar Williams</li>
+                    <li>David Bromberg</li>
+                    <li>Dejon Philharmonic</li>
+                    <li>Dido</li>
+                    <li>Elvis Costello</li>
+                    <li>Exit Zero Jazz</li>
+                    <li>G Love</li>
+                    <li>Gemma Sherry</li>
+                    <li>Great Hall Chamber Orchestra</li>
+                    <li>Guster</li>
+                    <li>Four/Ten Media</li>
+                    <li>Hale storm</li>
+                    <li>Heart</li>
+                    <li>Hiruy Tirfe</li>
+                    <li>Hot Hot Heat</li>
+                    <li>Howie Day</li>
+                    <li>Jack Johnson</li>
+                    <li>James Taylor</li>
+                    <li>Jane's Addiction</li>
+                    <li>Jerry Cantrell</li>
+                    <li>Job For A Cowboy</li>
+                    <li>Joe Bataan</li>
+                    <li>John Hyatt</li>
+                    <li>Kanye West</li>
+                    <li>Lil Kim</li>
+                    <li>Lit</li>
+                    <li>Lotus</li>
+                    <li>Ludachris</li>
+                    <li>Made In America Festival</li>
+                    <li>Marshall Allen</li>
+                    <li>Maddness</li>
+                    <li>Mary Fahl</li>
+                    <li>Meadows Festival</li>
+                    <li>Meek Mills Tidal</li>
+                    <li>Migos Tidal</li>
+                    <li>Monsters of Folk</li>
+                    <li>My Morning Jacket</li>
+                    <li>Musicopia</li>
+                    <li>Nas</li>
+                    <li>Norah Jones</li>
+                    <li>Nuevofest</li>
+                    <li>Oasis</li>
+                    <li>Opera Philadelphia</li>
+                    <li>Orrin Evans</li>
+                    <li>Paul Simon</li>
+                    <li>PBS Bucknell Christmass</li>
+                    <li>Pete Yorn</li>
+                    <li>Phila. Youth Orchestra</li>
+                    <li>Philadelphia Orchestra</li>
+                    <li>Phila Welcome America</li>
+                    <li>Philly Folk Fest</li>
+                    <li>Philly-Paris Lockdown</li>
+                    <li>Quest Love</li>
+                    <li>Rancid</li>
+                    <li>Revivalists</li>
+                    <li>Robin Thicke</li>
+                    <li>Rodrigo & Gabriela</li>
+                    <li>Rosfest</li>
+                    <li>Rufus Wainwright</li>
+                    <li>Saliva</li>
+                    <li>Sheryl Crow</li>
+                    <li>Shine Down</li>
+                    <li>Sounds Of Liberation</li>
+                    <li>Silverchair</li>
+                    <li>Steve Earl</li>
+                    <li>Sun Ra Arkestra</li>
+                    <li>Taking Back Sunday</li>
+                    <li>Tears For Fears</li>
+                    <li>The Blind Boys</li>
+                    <li>The Calling</li>
+                    <li>The Fray</li>
+                    <li>The Goo Goo Dolls</li>
+                    <li>The National</li>
+                    <li>The Polyphonic Spree</li>
+                    <li>The Roots</li>
+                    <li>The Suffers</li>
+                    <li>Tyreese</li>
+                    <li>War On Drugs</li>
+                    <li>Wilco</li>
+                    <li>WMMR campout</li>
+                    <li>Woodstock 40th</li>
+                    <li>WXPN Blues Project</li>
+                    <li>WXPN Gospel Roots</li>
+                    <li>WXPN Zydeco Crossroads</li>
+                    <li>Xponential Festival</li>
+                    <li>Yellow Card</li>
+                </ul>
+            </div>
+
+            <div class="bg-black text-white p-4">
+                <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
+                    Studio Sessions and Projects
+                </h1>
+                <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
+                    <li>14 Points</li>
+                    <li>3 Js' in the Morning</li>
+                    <li>4Karma</li>
+                    <li>52 Pickup</li>
+                    <li>Adrian Ferrar</li>
+                    <li>Adventure Lost</li>
+                    <li>After The Fall</li>
+                    <li>Aiden James</li>
+                    <li>Alex Abelson</li>
+                    <li>Alex Brennan</li>
+                    <li>Alex Mara</li>
+                    <li>All Right Junior</li>
+                    <li>AmyCarr</li>
+                    <li>Andy Brown</li>
+                    <li>Angela Ammons</li>
+                    <li>Ang Lee</li>
+                    <li>Anne Fontanella</li>
+                    <li>Anne Howley</li>
+                    <li>Another Mother</li>
+                    <li>Anthony Federov</li>
+                    <li>Asher Kahn Band</li>
+                    <li>At Least 12</li>
+                    <li>Atomic Buzztones</li>
+                    <li>Ava L. Williams</li>
+                    <li>Avalon String Band</li>
+                    <li>Avarod</li>
+                    <li>Barbara Mason</li>
+                    <li>Beatnik Brown</li>
+                    <li>Bill Ricini</li>
+                    <li>Blutopia</li>
+                    <li>Bohemian Sunrise</li>
+                    <li>Bruce Hanson</li>
+                    <li>Bubby Fan</li>
+                    <li>Buck Rodgers Band</li>
+                    <li>Carlos Cannon</li>
+                    <li>Caroline Kearny</li>
+                    <li>Casey Benedict</li>
+                    <li>Cecil Parker</li>
+                    <li>Cedrick Napoleon</li>
+                    <li>Chapter III</li>
+                    <li>Charlena Solomon</li>
+                    <li>Chimera</li>
+                    <li>Chris Mundis</li>
+                    <li>Chuck Treece</li>
+                    <li>City Love Orchestra</li>
+                    <li>Clay Stiles</li>
+                    <li>Collosal Spin</li>
+                    <li>Coltrane</li>
+                    <li>Common Enemies</li>
+                    <li>Con</li>
+                    <li>Creme</li>
+                    <li>Dana Robinson</li>
+                    <li>Dave Mauger</li>
+                    <li>Dawne'</li>
+                    <li>Debbie Deangelo</li>
+                    <li>Deb Callahan</li>
+                    <li>Dende</li>
+                    <li>Diatribe</li>
+                    <li>Donald Robinson</li>
+                    <li>Doug Lewis</li>
+                    <li>Down To One</li>
+                    <li>Dr. John</li>
+                    <li>Drexel Treble Makers</li>
+                    <li>Duncan & Rachel</li>
+                    <li>East Hundred</li>
+                    <li>Ellipsis</li>
+                    <li>Emily Bates</li>
+                    <li>Eric Crawford</li>
+                    <li>Eric Williams</li>
+                    <li>Euclid Street</li>
+                    <li>Faith Chitiyo</li>
+                    <li>Ferco String Band</li>
+                    <li>Five Points</li>
+                    <li>Gary Fox</li>
+                    <li>Geri Delaney</li>
+                    <li>Greg Kane</li>
+                    <li>Grover Washington, Jr.</li>
+                    <li>Hilliard</li>
+                    <li>Incoherent Dream</li>
+                    <li>Jackie Shapiro</li>
+                    <li>Jamie</li>
+                    <li>Jay Novello</li>
+                    <li>Jazzmine Sullivan</li>
+                    <li>Jennifer Barrett</li>
+                    <li>Jennifer Logue</li>
+                    <li>Jim Renna</li>
+                    <li>Jim Yeager</li>
+                    <li>Joanna Norris</li>
+                    <li>Joe Heron</li>
+                    <li>Joe Nihil</li>
+                    <li>John Burke</li>
+                    <li>John Carr</li>
+                    <li>John Legend</li>
+                    <li>Johnnie Whiteside</li>
+                    <li>John Sweeney</li>
+                    <li>John Sweeney</li>
+                    <li>Jon Herbert</li>
+                    <li>Joshua Gabriel</li>
+                    <li>Josh Wink</li>
+                    <li>Joyce Sims</li>
+                    <li>Julie Loesch</li>
+                    <li>Karan H</li>
+                    <li>Kate Martin</li>
+                    <li>Kate Monaghan</li>
+                    <li>Kelsey Miller</li>
+                    <li>Ken Green</li>
+                    <li>Kevin Robinson</li>
+                    <li>Lady Alma</li>
+                    <li>Laranah Ray</li>
+                    <li>Leianna</li>
+                    <li>Lelia Broussard</li>
+                    <li>Leondavy Keong</li>
+                    <li>Linda Stanton</li>
+                    <li>Lindsay Rush</li>
+                    <li>Little League</li>
+                    <li>Liz DeVille</li>
+                    <li>Long Walk Home</li>
+                    <li>Mama Kangaroos</li>
+                    <li>Marc Cooper</li>
+                    <li>Marco Kopac</li>
+                    <li>Marc Smith</li>
+                    <li>Mark Young</li>
+                    <li>Marlyn Lassin</li>
+                    <li>Marquis Sunset</li>
+                    <li>Marsiglia</li>
+                    <li>Matt Cranston</li>
+                    <li>Medieval Babes</li>
+                    <li>Mello Commotion</li>
+                    <li>Michelle Caan</li>
+                    <li>Mikal Anderson</li>
+                    <li>Mike Duncan</li>
+                    <li>MoJo Kings</li>
+                    <li>More Drama</li>
+                    <li>Muhlenberg Acafellas</li>
+                    <li>Muhlenberg Dynamics</li>
+                    <li>Muhlenberg Girl Next Door</li>
+                    <li>Nana Korantemea</li>
+                    <li>Nancy Falkow</li>
+                    <li>Neal Hall</li>
+                    <li>Neil Levin</li>
+                    <li>Nico Fly</li>
+                    <li>No Kyung Lee</li>
+                    <li>Norm May</li>
+                    <li>N Tyme</li>
+                    <li>October Black</li>
+                    <li>Off The Beat</li>
+                    <li>Optimum Prime</li>
+                    <li>Otis Punk</li>
+                    <li>Pat Lerra</li>
+                    <li>Penn Masala</li>
+                    <li>Pepper's Ghost</li>
+                    <li>Peter Keay</li>
+                    <li>Philadelphia Folklore Project</li>
+                    <li>Philadelphia String Quartet</li>
+                    <li>Phil Hurtt</li>
+                    <li>Phyllis Heitjan</li>
+                    <li>Pretty Poison</li>
+                    <li>Prima Donna</li>
+                    <li>Primavera Fund</li>
+                    <li>Princeton Old NaSoul</li>
+                    <li>Princeton Roaring 20’s</li>
+                    <li>Princeton Shere Kahn</li>
+                    <li>Rachel Birney</li>
+                    <li>Racing Daylight</li>
+                    <li>Ralph Voerth</li>
+                    <li>Rebecca Jensen</li>
+                    <li>Richard Jacoby</li>
+                    <li>Rick Rollins</li>
+                    <li>Rob Cavazinni</li>
+                    <li>Robert Addison</li>
+                    <li>Rob Murat</li>
+                    <li>Rob Simpson</li>
+                    <li>Rob Sobel</li>
+                    <li>Rodney Whittenberg</li>
+                    <li>Ruder Than You</li>
+                    <li>Russ Castella</li>
+                    <li>Same Old Street</li>
+                    <li>Scythe of Azriel</li>
+                    <li>Second Story</li>
+                    <li>Shut Eye Train</li>
+                    <li>Shwa</li>
+                    <li>Sierra Hurt</li>
+                    <li>Sirus</li>
+                    <li>Stacey Coppesetta</li>
+                    <li>Stereofield</li>
+                    <li>Straw</li>
+                    <li>Susan Watts</li>
+                    <li>Sustaining Simple</li>
+                    <li>Technique</li>
+                    <li>The Barley Boys</li>
+                    <li>The Go Ahead</li>
+                    <li>The Inspiration</li>
+                    <li>The Nooses</li>
+                    <li>The Pennisons</li>
+                    <li>The Princeton Nasoons</li>
+                    <li>The Underills</li>
+                    <li>This Radiant Boy</li>
+                    <li>Thomas Foeck</li>
+                    <li>Thomas Jonak</li>
+                    <li>T Luv</li>
+                    <li>Tom Adams</li>
+                    <li>Tony Beck</li>
+                    <li>Tony Williams</li>
+                    <li>Troublesome Blue</li>
+                    <li>Trudy Pitts</li>
+                    <li>U Of Penn Counterparts</li>
+                    <li>Verona</li>
+                    <li>Vincente Castenadas</li>
+                    <li>Wharton Follies</li>
+                    <li>Young and Da Restless</li>
+                </ul>
+            </div>
+
+            <div class="bg-black text-white p-4">
+                <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
+                    Media and Venues
+                </h1>
+                <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
+                    <li>1st Unitarian Church</li>
+                    <li>6 ABC</li>
+                    <li>Antenna Audio</li>
+                    <li>Athena Film Festival</li>
+                    <li>Barnard College</li>
+                    <li>BB&T</li>
+                    <li>Behind The Beats</li>
+                    <li>Bethel Woods Center</li>
+                    <li>Bucknell University</li>
+                    <li>Cherry Hill Toyota</li>
+                    <li>Comcast</li>
+                    <li>Chris’ Jazz Cafe</li>
+                    <li>Dawn Treader Productions</li>
+                    <li>Fox 29</li>
+                    <li>Friday Morning Quarterback</li>
+                    <li>Fringe Arts</li>
+                    <li>Gramercy Theater</li>
+                    <li>Kimmel Center</li>
+                    <li>Liacouras center</li>
+                    <li>Lincoln Financial Field</li>
+                    <li>Met Life Stadium</li>
+                    <li>National Mentos Spot</li>
+                    <li>NBC 10</li>
+                    <li>NPR</li>
+                    <li>Pearlman Theatre</li>
+                    <li>Penns Landing River Stage</li>
+                    <li>PHL17</li>
+                    <li>Prince Music Theater</li>
+                    <li>South Kitchen</li>
+                    <li>Susquehanna University</li>
+                    <li>Temple Performing Arts Cntr</li>
+                    <li>ABC Thanksgiving Day</li>
+                    <li>The Academy Of Music</li>
+                    <li>The Annenberg Theater</li>
+                    <li>The Apollo</li>
+                    <li>The Fillmore Philadelphia</li>
+                    <li>The Arden Theater</li>
+                    <li>The Bowery Ballroom</li>
+                    <li>The Electric Factory</li>
+                    <li>The Met Philadelphia</li>
+                    <li>The Queen Wilmington</li>
+                    <li>The TLA</li>
+                    <li>Tower Theatre</li>
+                    <li>Turn Up the Music</li>
+                    <li>Union Transfer</li>
+                    <li>Verizon Hall</li>
+                    <li>Wachovia Center</li>
+                    <li>WDRE</li>
+                    <li>Wiggins Park Stage</li>
+                    <li>WMMR</li>
+                    <li>World Cafe Live</li>
+                    <li>WVIA</li>
+                    <li>WXPN</li>
+                    <li>Y100</li>
+                </ul>
+            </div>
+
+            <div class="bg-black text-white p-4">
+                <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
+                    Notable Live Production FOH or Monitors
+                </h1>
+                <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
+                    <li>Bella Fleck Abigail Washburn</li>
+                    <li>Cabinet</li>
+                    <li>Carl Palmer</li>
+                    <li>Chon</li>
+                    <li>Cory Henry & The Funk Apostles</li>
+                    <li>Dave Mason</li>
+                    <li>David Cook</li>
+                    <li>Donavan Frankenreiter</li>
+                    <li>Exit Zero Jazz Festivals</li>
+                    <li>George Porter</li>
+                    <li>Grace Potter</li>
+                    <li>Holly Bowling</li>
+                    <li>Jewel</li>
+                    <li>K T Tunstall</li>
+                    <li>Leon Russel</li>
+                    <li>Lucero</li>
+                    <li>Marc Brusarrd</li>
+                    <li>Minas</li>
+                    <li>Paula Cole</li>
+                    <li>Philly Bloco</li>
+                    <li>Promise of the Real</li>
+                    <li>Rebirth Brass Band</li>
+                    <li>Red Baraat</li>
+                    <li>The Rival Sons</li>
+                    <li>Stooges Brass Band</li>
+                    <li>The English Beat</li>
+                    <li>The Feelies</li>
+                    <li>The Jayhawks</li>
+                    <li>The Lone Bellow</li>
+                    <li>The Smithereens</li>
+                    <li>Train</li>
+                    <li>Wailers</li>
+                    <li>WXPN Gospel Roots</li>
+                    <li>Of Rock and Soul</li>
+                    <li>Lit</li>
+                </ul>
+            </div>
+
+            <footer class="bg-black p-4 text-white mt-4">
+                &copy; Michael Richelle
+            </footer>
         </div>
-        <div class="hidden sm:flex space-x-4 mt-3">
-          <a href=".." title="Home" class="nav-item">Home</a>
-          <a href="../services" title="Services" class="nav-item">Services</a>
-          <a href="../about" title="About" class="nav-item">About</a>
-          <a
-            href="../work-history"
-            title="Work History"
-            class="nav-item current"
-            >Work History</a
-          >
-        </div>
-      </div>
-      <!-- mobile menu -->
-      <div class="hidden sm:hidden mobile-menu px-4 pt-2 pb-4">
-        <div class="flex flex-col divide-y divide-emerald-400 divide-y-2">
-          <a href=".." title="Home" class="nav-item-mobile">Home</a>
-          <a href="../services" title="Services" class="nav-item-mobile"
-            >Services</a
-          >
-          <a href="../about" title="About" class="nav-item-mobile">About</a>
-          <a
-            href="../work-history"
-            title="Work History"
-            class="nav-item-mobile current"
-            >Work History</a
-          >
-        </div>
-        <div class="flex space-x-3 mt-3">
-          <a
-            href="https://www.facebook.com/michael.richelle"
-            target="_blank"
-            title="Facebook"
-            ><img src="../assets/facebook.png" class="w-7"
-          /></a>
-          <a
-            href="https://open.spotify.com/playlist/4NHBeWzqGh4bDeovZv8gUv?si=0b195e4fbc5542f4"
-            target="_blank"
-            title="Spotify"
-            ><img src="../assets/spotify.png" class="w-7"
-          /></a>
-          <a
-            href="https://www.youtube.com/playlist?list=PLzm5CgbMERQdmVow2ueSp1I8dYIfN-uBK"
-            target="_blank"
-            title="Youtube"
-            ><img src="../assets/youtube.png" class="w-7"
-          /></a>
-        </div>
-      </div>
-      <script>
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
-
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-        });
-      </script>
-    </nav>
-    <div class="max-w-4xl mx-auto pt-4 space-y-4">
-      <div class="bg-black text-white p-4">
-        <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
-          Recent work
-        </h1>
-        <ul class="list-disc pl-6">
-          <li>Amos Lee "My Ideal" (Dualtone) [Studio Recording Engineer]</li>
-          <li>
-            Sun Ra Arkestra "Living Sky" (Omni Sound) [Studio Recording
-            Engineer]
-          </li>
-          <li>Roots Picnic "Mann Stage" (YouTube) [Broadcast Music Mixer]</li>
-          <li>
-            Samara Joy "O Holy Night" (Verve) [Assistant Recording Engineer]
-          </li>
-          <li>
-            Snacktime "Sounds From The Street" [Studio Recording Engineer]
-          </li>
-          <li>
-            Philadelphia Orchestra "Our City Your Orchestra" (Small Ensemble
-            Video) [Studio Recording Engineer]
-          </li>
-          <li>Athena Film Festival (Barnard College) [Audio Technician]</li>
-          <li>
-            Rising Song Institute RAZA "Kapelya" [Studio Recording Engineer]
-          </li>
-          <li>Hiruy Tirfe (Upcoming Release) [Studio Recording Engineer]</li>
-          <li>
-            Sun Ra Arkestra "Studio Album Swirling" (Strut Records) [Studio Mix
-            Engineer] (Grammy Nominated)
-          </li>
-          <li>
-            Vince Mendoza & Temple Studio Orchestra "Constant Renaissance" with
-            Dick Oatts & Terrell Stafford [Remote Recording Engineer] (Grammy
-            Nominated project)
-          </li>
-          <li>
-            Orrin Evans & The Captain Black Big Band "Presence" (Smoke Sessions)
-            [Assistant Remote Recording Engineer] (Grammy Nominated project)
-          </li>
-          <li>
-            Jazzmine Sullivan "Essence Festival Concert" [Remote Recording
-            Engineer]
-          </li>
-          <li>
-            Christmass In Rockefeller Center "Harry Conick, Brad Paisley, Rob
-            Thomas" (NBC) [Assistant Remote Recording Engineer]
-          </li>
-          <li>
-            Oliver Tree "Grub Hub Sound Bite Video Concert " [Studio Recording
-            Engineer]
-          </li>
-          <li>
-            Chad LB Quartet "In Studio Concert " [Studio Recording Engineer]
-          </li>
-          <li>
-            Curtis Insitute of Music "Mercy an Opera/Film" [Studio Recording
-            Engineer]
-          </li>
-          <li>
-            Club Patio Festival 2020 "Orrin Evans, Buster Williams, Jeff Watts,
-            Chris Potter" [FOH, Monitors, Livestream Mix]
-          </li>
-          <li>
-            Celine Dion "National NBC Pre Tape TV Special" [Remote Recording
-            Engineer]
-          </li>
-          <li>
-            Anderson East "Girlfriend Live" ( Atlantic Records) [Remote
-            Recording Engineer]
-          </li>
-          <li>
-            Chris Oatts Featuring Terrell Stafford "Personalities" (Bcm&d
-            Records) [Studio Recording/Mix Engineer]
-          </li>
-          <li>
-            Irreversible Entanglements "Open The Gates" (Studio Album) [Studio
-            Recording Engineer]
-          </li>
-          <li>
-            Dan Hanrahan (Upcoming Release) [Studio Recording/Mix Engineer]
-          </li>
-          <li>Najwa Parkins (Upcoming Release) [Studio Recording Engineer]</li>
-          <li>
-            The Revivalist (WMMR Live Recording from Ardmore Music Hall) [Remote
-            Recording Engineer]
-          </li>
-          <li>
-            Ensemble Novo (Studio Album Projects) [Studio Mixing Engineer]
-          </li>
-          <li>
-            Hot 97 Summer Jam Concert "Met Life Stadium" (Tidal) [Remote
-            Recording Engineer]
-          </li>
-          <li>Pathos Trio (Four/Ten Media) [Studio Recording Engineer]</li>
-          <li>
-            Japaneese Breakfast "NPR Live Broadcast" [Assistant Remote Recording
-            Engineer]
-          </li>
-          <li>
-            Black Pearl Chamber Orchestra "Studio Recording" [Studio Recording
-            Engineer]
-          </li>
-          <li>
-            Pascal Le Boeuf With The Acropolis Reed Quintet. [Studio Recording
-            Engineer]
-          </li>
-          <li>
-            Tyler Mitchell featuring Marshall Allen "Dancing Shadows" [Studio
-            Recording Engineer]
-          </li>
-          <li>
-            Micah Graves "Not For The Ordinary " (Studio Album) [Studio
-            Recording Engineer]
-          </li>
-          <li>
-            Ars Nova Miles Davis Tribute Concert (World Cafe Live) [FOH
-            Engineer]
-          </li>
-          <li>Holly Bowling Concert (World cafe Live) [FOH Engineer]</li>
-          <li>Grace Potter (WXPN Live at The World Cafe) [Monitor Engineer]</li>
-          <li>The Smithereens (World Cafe Live) [Monitor Engineer]</li>
-          <li>
-            Xponential Festival (WXPN) [Assistant Remote Recording Engineer]
-          </li>
-          <li>
-            Made In America Festival On The Parkway (Tidal) [Assitasnt Remote
-            Recording Engineer]
-          </li>
-          <li>Dreamville Festival (Tidal) [Remote Recording Engineer]</li>
-          <li>
-            V. Shayne Frederick "The King Suite" [Studio Recording Engineer]
-          </li>
-          <li>
-            Gemma Sherry (Studio Album Project) [Studio Recording Engineer]
-          </li>
-          <li>
-            Raji Malik (A Well Of Hope Album) [Studio Recording/Mixing/Mastering
-            Engineer]
-          </li>
-          <li>
-            Children Of Adam (Upcoming Release) [Studio
-            Recording/Mixing/Mastering Engineer]
-          </li>
-          <li>
-            Greg Duncan (Upcoming Release) [Studio Recording/Mixring Engineer]
-          </li>
-          <li>
-            John Blum With Marshall Allen (Upcoming Release) [Studio Recording
-            Engineer]
-          </li>
-          <li>
-            Wayne Smith (Upcoming Release) [Studio Recording/Mixing/Mastering
-            Engineer]
-          </li>
-          <li>
-            Connor O'neill "The Same Changes Vol. 1" [Studio Recording Engineer]
-          </li>
-          <li>
-            Opera Philadelphia Womens Choir (Studio Recording) [Studio Recording
-            Engineer]
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-black text-white p-4">
-        <h1 class="text-lg text-emerald-400 uppercase font-bold">
-          Partial A-Z
-        </h1>
-        <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
-          Live Studio Recordings - Concert Recordings - Broadcast Music Mixing
-        </h1>
-        <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
-          <li>311</li>
-          <li>Air</li>
-          <li>Alter Bridge</li>
-          <li>Amos Lee</li>
-          <li>Anderson East</li>
-          <li>Bacon Brothers</li>
-          <li>Ben Harper</li>
-          <li>Beth Orton</li>
-          <li>Billy Joel</li>
-          <li>Bow Wow</li>
-          <li>Breaking Benjamin</li>
-          <li>Brooklyn Hip Hop Fest</li>
-          <li>Busta Rhymes</li>
-          <li>Citizen Cope</li>
-          <li>Coheed & Cambria</li>
-          <li>Connor Barwin MTWB</li>
-          <li>Corinne Bailey Rea</li>
-          <li>Daniel Lanois</li>
-          <li>Dar Williams</li>
-          <li>David Bromberg</li>
-          <li>Dejon Philharmonic</li>
-          <li>Dido</li>
-          <li>Elvis Costello</li>
-          <li>Exit Zero Jazz</li>
-          <li>G Love</li>
-          <li>Gemma Sherry</li>
-          <li>Great Hall Chamber Orchestra</li>
-          <li>Guster</li>
-          <li>Four/Ten Media</li>
-          <li>Hale storm</li>
-          <li>Heart</li>
-          <li>Hiruy Tirfe</li>
-          <li>Hot Hot Heat</li>
-          <li>Howie Day</li>
-          <li>Jack Johnson</li>
-          <li>James Taylor</li>
-          <li>Jane's Addiction</li>
-          <li>Jerry Cantrell</li>
-          <li>Job For A Cowboy</li>
-          <li>Joe Bataan</li>
-          <li>John Hyatt</li>
-          <li>Kanye West</li>
-          <li>Lil Kim</li>
-          <li>Lit</li>
-          <li>Lotus</li>
-          <li>Ludachris</li>
-          <li>Made In America Festival</li>
-          <li>Marshall Allen</li>
-          <li>Maddness</li>
-          <li>Mary Fahl</li>
-          <li>Meadows Festival</li>
-          <li>Meek Mills Tidal</li>
-          <li>Migos Tidal</li>
-          <li>Monsters of Folk</li>
-          <li>My Morning Jacket</li>
-          <li>Musicopia</li>
-          <li>Nas</li>
-          <li>Norah Jones</li>
-          <li>Nuevofest</li>
-          <li>Oasis</li>
-          <li>Opera Philadelphia</li>
-          <li>Orrin Evans</li>
-          <li>Paul Simon</li>
-          <li>PBS Bucknell Christmass</li>
-          <li>Pete Yorn</li>
-          <li>Phila. Youth Orchestra</li>
-          <li>Philadelphia Orchestra</li>
-          <li>Phila Welcome America</li>
-          <li>Philly Folk Fest</li>
-          <li>Philly-Paris Lockdown</li>
-          <li>Quest Love</li>
-          <li>Rancid</li>
-          <li>Revivalists</li>
-          <li>Robin Thicke</li>
-          <li>Rodrigo & Gabriela</li>
-          <li>Rosfest</li>
-          <li>Rufus Wainwright</li>
-          <li>Saliva</li>
-          <li>Sheryl Crow</li>
-          <li>Shine Down</li>
-          <li>Sounds Of Liberation</li>
-          <li>Silverchair</li>
-          <li>Steve Earl</li>
-          <li>Sun Ra Arkestra</li>
-          <li>Taking Back Sunday</li>
-          <li>Tears For Fears</li>
-          <li>The Blind Boys</li>
-          <li>The Calling</li>
-          <li>The Fray</li>
-          <li>The Goo Goo Dolls</li>
-          <li>The National</li>
-          <li>The Polyphonic Spree</li>
-          <li>The Roots</li>
-          <li>The Suffers</li>
-          <li>Tyreese</li>
-          <li>War On Drugs</li>
-          <li>Wilco</li>
-          <li>WMMR campout</li>
-          <li>Woodstock 40th</li>
-          <li>WXPN Blues Project</li>
-          <li>WXPN Gospel Roots</li>
-          <li>WXPN Zydeco Crossroads</li>
-          <li>Xponential Festival</li>
-          <li>Yellow Card</li>
-        </ul>
-      </div>
-
-      <div class="bg-black text-white p-4">
-        <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
-          Studio Sessions and Projects
-        </h1>
-        <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
-          <li>14 Points</li>
-          <li>3 Js' in the Morning</li>
-          <li>4Karma</li>
-          <li>52 Pickup</li>
-          <li>Adrian Ferrar</li>
-          <li>Adventure Lost</li>
-          <li>After The Fall</li>
-          <li>Aiden James</li>
-          <li>Alex Abelson</li>
-          <li>Alex Brennan</li>
-          <li>Alex Mara</li>
-          <li>All Right Junior</li>
-          <li>AmyCarr</li>
-          <li>Andy Brown</li>
-          <li>Angela Ammons</li>
-          <li>Ang Lee</li>
-          <li>Anne Fontanella</li>
-          <li>Anne Howley</li>
-          <li>Another Mother</li>
-          <li>Anthony Federov</li>
-          <li>Asher Kahn Band</li>
-          <li>At Least 12</li>
-          <li>Atomic Buzztones</li>
-          <li>Ava L. Williams</li>
-          <li>Avalon String Band</li>
-          <li>Avarod</li>
-          <li>Barbara Mason</li>
-          <li>Beatnik Brown</li>
-          <li>Bill Ricini</li>
-          <li>Blutopia</li>
-          <li>Bohemian Sunrise</li>
-          <li>Bruce Hanson</li>
-          <li>Bubby Fan</li>
-          <li>Buck Rodgers Band</li>
-          <li>Carlos Cannon</li>
-          <li>Caroline Kearny</li>
-          <li>Casey Benedict</li>
-          <li>Cecil Parker</li>
-          <li>Cedrick Napoleon</li>
-          <li>Chapter III</li>
-          <li>Charlena Solomon</li>
-          <li>Chimera</li>
-          <li>Chris Mundis</li>
-          <li>Chuck Treece</li>
-          <li>City Love Orchestra</li>
-          <li>Clay Stiles</li>
-          <li>Collosal Spin</li>
-          <li>Coltrane</li>
-          <li>Common Enemies</li>
-          <li>Con</li>
-          <li>Creme</li>
-          <li>Dana Robinson</li>
-          <li>Dave Mauger</li>
-          <li>Dawne'</li>
-          <li>Debbie Deangelo</li>
-          <li>Deb Callahan</li>
-          <li>Dende</li>
-          <li>Diatribe</li>
-          <li>Donald Robinson</li>
-          <li>Doug Lewis</li>
-          <li>Down To One</li>
-          <li>Dr. John</li>
-          <li>Drexel Treble Makers</li>
-          <li>Duncan & Rachel</li>
-          <li>East Hundred</li>
-          <li>Ellipsis</li>
-          <li>Emily Bates</li>
-          <li>Eric Crawford</li>
-          <li>Eric Williams</li>
-          <li>Euclid Street</li>
-          <li>Faith Chitiyo</li>
-          <li>Ferco String Band</li>
-          <li>Five Points</li>
-          <li>Gary Fox</li>
-          <li>Geri Delaney</li>
-          <li>Greg Kane</li>
-          <li>Grover Washington, Jr.</li>
-          <li>Hilliard</li>
-          <li>Incoherent Dream</li>
-          <li>Jackie Shapiro</li>
-          <li>Jamie</li>
-          <li>Jay Novello</li>
-          <li>Jazzmine Sullivan</li>
-          <li>Jennifer Barrett</li>
-          <li>Jennifer Logue</li>
-          <li>Jim Renna</li>
-          <li>Jim Yeager</li>
-          <li>Joanna Norris</li>
-          <li>Joe Heron</li>
-          <li>Joe Nihil</li>
-          <li>John Burke</li>
-          <li>John Carr</li>
-          <li>John Legend</li>
-          <li>Johnnie Whiteside</li>
-          <li>John Sweeney</li>
-          <li>John Sweeney</li>
-          <li>Jon Herbert</li>
-          <li>Joshua Gabriel</li>
-          <li>Josh Wink</li>
-          <li>Joyce Sims</li>
-          <li>Julie Loesch</li>
-          <li>Karan H</li>
-          <li>Kate Martin</li>
-          <li>Kate Monaghan</li>
-          <li>Kelsey Miller</li>
-          <li>Ken Green</li>
-          <li>Kevin Robinson</li>
-          <li>Lady Alma</li>
-          <li>Laranah Ray</li>
-          <li>Leianna</li>
-          <li>Lelia Broussard</li>
-          <li>Leondavy Keong</li>
-          <li>Linda Stanton</li>
-          <li>Lindsay Rush</li>
-          <li>Little League</li>
-          <li>Liz DeVille</li>
-          <li>Long Walk Home</li>
-          <li>Mama Kangaroos</li>
-          <li>Marc Cooper</li>
-          <li>Marco Kopac</li>
-          <li>Marc Smith</li>
-          <li>Mark Young</li>
-          <li>Marlyn Lassin</li>
-          <li>Marquis Sunset</li>
-          <li>Marsiglia</li>
-          <li>Matt Cranston</li>
-          <li>Medieval Babes</li>
-          <li>Mello Commotion</li>
-          <li>Michelle Caan</li>
-          <li>Mikal Anderson</li>
-          <li>Mike Duncan</li>
-          <li>MoJo Kings</li>
-          <li>More Drama</li>
-          <li>Muhlenberg Acafellas</li>
-          <li>Muhlenberg Dynamics</li>
-          <li>Muhlenberg Girl Next Door</li>
-          <li>Nana Korantemea</li>
-          <li>Nancy Falkow</li>
-          <li>Neal Hall</li>
-          <li>Neil Levin</li>
-          <li>Nico Fly</li>
-          <li>No Kyung Lee</li>
-          <li>Norm May</li>
-          <li>N Tyme</li>
-          <li>October Black</li>
-          <li>Off The Beat</li>
-          <li>Optimum Prime</li>
-          <li>Otis Punk</li>
-          <li>Pat Lerra</li>
-          <li>Penn Masala</li>
-          <li>Pepper's Ghost</li>
-          <li>Peter Keay</li>
-          <li>Philadelphia Folklore Project</li>
-          <li>Philadelphia String Quartet</li>
-          <li>Phil Hurtt</li>
-          <li>Phyllis Heitjan</li>
-          <li>Pretty Poison</li>
-          <li>Prima Donna</li>
-          <li>Primavera Fund</li>
-          <li>Princeton Old NaSoul</li>
-          <li>Princeton Roaring 20’s</li>
-          <li>Princeton Shere Kahn</li>
-          <li>Rachel Birney</li>
-          <li>Racing Daylight</li>
-          <li>Ralph Voerth</li>
-          <li>Rebecca Jensen</li>
-          <li>Richard Jacoby</li>
-          <li>Rick Rollins</li>
-          <li>Rob Cavazinni</li>
-          <li>Robert Addison</li>
-          <li>Rob Murat</li>
-          <li>Rob Simpson</li>
-          <li>Rob Sobel</li>
-          <li>Rodney Whittenberg</li>
-          <li>Ruder Than You</li>
-          <li>Russ Castella</li>
-          <li>Same Old Street</li>
-          <li>Scythe of Azriel</li>
-          <li>Second Story</li>
-          <li>Shut Eye Train</li>
-          <li>Shwa</li>
-          <li>Sierra Hurt</li>
-          <li>Sirus</li>
-          <li>Stacey Coppesetta</li>
-          <li>Stereofield</li>
-          <li>Straw</li>
-          <li>Susan Watts</li>
-          <li>Sustaining Simple</li>
-          <li>Technique</li>
-          <li>The Barley Boys</li>
-          <li>The Go Ahead</li>
-          <li>The Inspiration</li>
-          <li>The Nooses</li>
-          <li>The Pennisons</li>
-          <li>The Princeton Nasoons</li>
-          <li>The Underills</li>
-          <li>This Radiant Boy</li>
-          <li>Thomas Foeck</li>
-          <li>Thomas Jonak</li>
-          <li>T Luv</li>
-          <li>Tom Adams</li>
-          <li>Tony Beck</li>
-          <li>Tony Williams</li>
-          <li>Troublesome Blue</li>
-          <li>Trudy Pitts</li>
-          <li>U Of Penn Counterparts</li>
-          <li>Verona</li>
-          <li>Vincente Castenadas</li>
-          <li>Wharton Follies</li>
-          <li>Young and Da Restless</li>
-        </ul>
-      </div>
-
-      <div class="bg-black text-white p-4">
-        <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
-          Media and Venues
-        </h1>
-        <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
-          <li>1st Unitarian Church</li>
-          <li>6 ABC</li>
-          <li>Antenna Audio</li>
-          <li>Athena Film Festival</li>
-          <li>Barnard College</li>
-          <li>BB&T</li>
-          <li>Behind The Beats</li>
-          <li>Bethel Woods Center</li>
-          <li>Bucknell University</li>
-          <li>Cherry Hill Toyota</li>
-          <li>Comcast</li>
-          <li>Chris’ Jazz Cafe</li>
-          <li>Dawn Treader Productions</li>
-          <li>Fox 29</li>
-          <li>Friday Morning Quarterback</li>
-          <li>Fringe Arts</li>
-          <li>Gramercy Theater</li>
-          <li>Kimmel Center</li>
-          <li>Liacouras center</li>
-          <li>Lincoln Financial Field</li>
-          <li>Met Life Stadium</li>
-          <li>National Mentos Spot</li>
-          <li>NBC 10</li>
-          <li>NPR</li>
-          <li>Pearlman Theatre</li>
-          <li>Penns Landing River Stage</li>
-          <li>PHL17</li>
-          <li>Prince Music Theater</li>
-          <li>South Kitchen</li>
-          <li>Susquehanna University</li>
-          <li>Temple Performing Arts Cntr</li>
-          <li>ABC Thanksgiving Day</li>
-          <li>The Academy Of Music</li>
-          <li>The Annenberg Theater</li>
-          <li>The Apollo</li>
-          <li>The Fillmore Philadelphia</li>
-          <li>The Arden Theater</li>
-          <li>The Bowery Ballroom</li>
-          <li>The Electric Factory</li>
-          <li>The Met Philadelphia</li>
-          <li>The Queen Wilmington</li>
-          <li>The TLA</li>
-          <li>Tower Theatre</li>
-          <li>Turn Up the Music</li>
-          <li>Union Transfer</li>
-          <li>Verizon Hall</li>
-          <li>Wachovia Center</li>
-          <li>WDRE</li>
-          <li>Wiggins Park Stage</li>
-          <li>WMMR</li>
-          <li>World Cafe Live</li>
-          <li>WVIA</li>
-          <li>WXPN</li>
-          <li>Y100</li>
-        </ul>
-      </div>
-
-      <div class="bg-black text-white p-4">
-        <h1 class="text-lg text-emerald-400 uppercase font-bold mb-2">
-          Notable Live Production FOH or Monitors
-        </h1>
-        <ul class="list-disc pl-6 columns-2 sm:columns-3 gap-8">
-          <li>Bella Fleck Abigail Washburn</li>
-          <li>Cabinet</li>
-          <li>Carl Palmer</li>
-          <li>Chon</li>
-          <li>Cory Henry & The Funk Apostles</li>
-          <li>Dave Mason</li>
-          <li>David Cook</li>
-          <li>Donavan Frankenreiter</li>
-          <li>Exit Zero Jazz Festivals</li>
-          <li>George Porter</li>
-          <li>Grace Potter</li>
-          <li>Holly Bowling</li>
-          <li>Jewel</li>
-          <li>K T Tunstall</li>
-          <li>Leon Russel</li>
-          <li>Lucero</li>
-          <li>Marc Brusarrd</li>
-          <li>Minas</li>
-          <li>Paula Cole</li>
-          <li>Philly Bloco</li>
-          <li>Promise of the Real</li>
-          <li>Rebirth Brass Band</li>
-          <li>Red Baraat</li>
-          <li>The Rival Sons</li>
-          <li>Stooges Brass Band</li>
-          <li>The English Beat</li>
-          <li>The Feelies</li>
-          <li>The Jayhawks</li>
-          <li>The Lone Bellow</li>
-          <li>The Smithereens</li>
-          <li>Train</li>
-          <li>Wailers</li>
-          <li>WXPN Gospel Roots</li>
-          <li>Of Rock and Soul</li>
-          <li>Lit</li>
-        </ul>
-      </div>
-
-      <footer class="bg-black p-4 text-white mt-4">
-        &copy; Michael Richelle
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
